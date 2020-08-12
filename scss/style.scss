@@ -1,0 +1,169 @@
+@import "../scss/config";
+@import "../scss/utilities";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.4;
+  background: $bg-light;
+  color: #3333;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+// main styling
+#main-header {
+  border-bottom: 1px solid #4444;
+
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .logo {
+      width: 150px;
+      // height: 50px;
+    }
+    .nav-list {
+      @include flex;
+
+      .nav-item {
+        padding: 1.2rem;
+      }
+      a {
+        padding-bottom: 2rem;
+        font-size: 1.1rem;
+        color: $text-color;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-bottom: 5px solid transparent;
+        text-align: center;
+        &:hover {
+          border-color: $main-color;
+        }
+      }
+
+      .current {
+        color: #000;
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
+// Section windows
+.window {
+  &-box {
+    @include grid;
+    padding: 5rem 0;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      line-height: 1.6;
+
+      &.sec-text {
+        margin: 1.2rem 0;
+      }
+    }
+
+    .btn-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      & .text-muted {
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+        padding-right: 2rem;
+        display: none;
+      }
+    }
+
+    .btn {
+      font-size: 15px;
+      cursor: pointer;
+      padding: 0.9rem 1.2rem;
+      text-align: center;
+      width: 35%;
+      display: inline-block;
+      text-align: center;
+      border-radius: 2px;
+      color: #000;
+      transition: opacity 0.3s ease;
+      &-main {
+        background-color: $main-color;
+      }
+
+      .fas,
+      .fab {
+        padding-right: 0.5rem;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+// Section Mobile
+
+#mobile {
+  .mobile {
+    &-content {
+      @include grid;
+      padding: 4rem 0;
+
+      .mobile-img {
+        width: 60%;
+        place-self: center;
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.5rem;
+      }
+
+      div {
+        margin: 1rem 0;
+        align-self: flex-start;
+      }
+      input[type="tel"] {
+        background: #fff;
+        padding: 0.5rem 0.3rem;
+        width: 70%;
+        border: 2px solid #b1b1b133;
+        outline: none;
+        &:focus {
+          border-color: $main-color;
+        }
+      }
+
+      input[type="button"] {
+        padding: 0.4rem 0.3rem;
+        width: 28%;
+      }
+    }
+  }
+}
+
+// font-family: "Roboto", sans-serif;

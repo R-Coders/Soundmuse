@@ -1,0 +1,278 @@
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 4rem;
+  overflow: hidden;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2.5rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2.5rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.my-1 {
+  padding: 1rem 0;
+}
+
+.my-2 {
+  padding: 2.5rem 0;
+}
+
+.my-3 {
+  padding: 3rem 0;
+}
+
+.m-1 {
+  padding: 1rem;
+}
+
+.m-2 {
+  padding: 2.5rem;
+}
+
+.m-3 {
+  padding: 3rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 1rem;
+  color: #000;
+}
+
+.text-muted {
+  color: #cacaca;
+}
+
+.bg-medium {
+  background-color: #f6f5f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  line-height: 1.4;
+  background: #ffffff;
+  color: #3333;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+#main-header {
+  border-bottom: 1px solid #4444;
+}
+
+#main-header #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+#main-header #nav .logo {
+  width: 150px;
+}
+
+#main-header #nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-header #nav .nav-list .nav-item {
+  padding: 1.2rem;
+}
+
+#main-header #nav .nav-list a {
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #7c3ece;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 5px solid transparent;
+  text-align: center;
+}
+
+#main-header #nav .nav-list a:hover {
+  border-color: #03e577;
+}
+
+#main-header #nav .nav-list .current {
+  color: #000;
+  border-color: #03e577;
+}
+
+.window-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 2rem;
+  padding: 5rem 0;
+}
+
+.window-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.window-content p {
+  line-height: 1.6;
+}
+
+.window-content p.sec-text {
+  margin: 1.2rem 0;
+}
+
+.window-content .btn-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.window-content .btn-wrap .text-muted {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  padding-right: 2rem;
+  display: none;
+}
+
+.window-content .btn {
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0.9rem 1.2rem;
+  text-align: center;
+  width: 35%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 2px;
+  color: #000;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.window-content .btn-main {
+  background-color: #03e577;
+}
+
+.window-content .btn .fas,
+.window-content .btn .fab {
+  padding-right: 0.5rem;
+}
+
+.window-content .btn:hover {
+  opacity: 0.9;
+}
+
+#mobile .mobile-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 2rem;
+  padding: 4rem 0;
+}
+
+#mobile .mobile-content .mobile-img {
+  width: 60%;
+  place-self: center;
+}
+
+#mobile .mobile-content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+}
+
+#mobile .mobile-content div {
+  margin: 1rem 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#mobile .mobile-content input[type="tel"] {
+  background: #fff;
+  padding: 0.5rem 0.3rem;
+  width: 70%;
+  border: 2px solid #b1b1b133;
+  outline: none;
+}
+
+#mobile .mobile-content input[type="tel"]:focus {
+  border-color: #03e577;
+}
+
+#mobile .mobile-content input[type="button"] {
+  padding: 0.4rem 0.3rem;
+  width: 28%;
+}
+/*# sourceMappingURL=style.css.map */

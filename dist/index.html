@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Download & Listen to your Fav songs an all device</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <nav id="nav">
+          <img src="images/Group_3.svg" alt="disk" class="logo" />
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#window">Computer</a>
+            </li>
+            <li class="nav-item"><a href="#mobile">Tablet</a></li>
+            <li class="nav-item"><a href="#tablet">Smartphone</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="window" class="window">
+      <div class="container">
+        <div class="window-box">
+          <img class="window-img" src="images/orig.png" alt="" />
+          <div class="window-content">
+            <h2 class="title">
+              Disk 3.0 for Windows
+            </h2>
+            <p class="lead">
+              Yandex.Disk looks like a regular folder on your computer. Files in
+              it may not take up space - just specify what to leave only in the
+              cloud and what to duplicate on your hard disk.
+            </p>
+
+            <p class="lead sec-text">
+              You can also edit screenshots and create notes in the program.
+            </p>
+
+            <div class="btn-wrap">
+              <span>
+                <a href="#" class="btn btn-download btn-main"
+                  ><i class="fab fa-windows"></i>Download
+                  <i class="fas fa-chevron-down"></i
+                ></a>
+              </span>
+
+              <span class="text-muted">
+                <p>
+                  By downloading the program, you accept the terms
+                </p>
+                <a href="#">License agreement</a>
+              </span>
+              <!-- <p>
+                <a href="">Instruction on update</a>
+                <a href="">Download old version</a>
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mobile" class="mobile bg-medium py-3">
+      <div class="container">
+        <div class="mobile-content">
+          <img src="images/_mobile.png" alt="mobile image" class="mobile-img" />
+          <div class="mobile-content-text p-2">
+            <h2 class="title">Unlimited Songs on phone</h2>
+            <p class="lead">
+              Get infinite storage for photos and videos taken with your phone.
+              Just install the Yandex.Disk mobile app and enable auto-uploading.
+            </p>
+            <div>
+              <form class="mobile-content-form">
+              <p class="lead">Get a download link for your phone</p>
+              <div class="input-group">
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="+7 908 5436952"
+                />
+                <input type="button" value="Get" disabled />
+            </div>
+              </div>
+            </form>
+          </div>
+          <div class="mobile-app">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

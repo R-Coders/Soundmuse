@@ -1,0 +1,78 @@
+.container {
+  max-width: $container-width;
+  margin: auto;
+  padding: 0 4rem;
+  overflow: hidden;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 2rem;
+}
+
+//
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2.5rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2.5rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.my-1 {
+  padding: 1rem 0;
+}
+.my-2 {
+  padding: 2.5rem 0;
+}
+.my-3 {
+  padding: 3rem 0;
+}
+
+.m-1 {
+  padding: 1rem;
+}
+.m-2 {
+  padding: 2.5rem;
+}
+.m-3 {
+  padding: 3rem;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: $text-dark;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+.lead {
+  font-size: 1rem;
+  color: $text-dark;
+}
+
+.text-muted {
+  color: #cacaca;
+}
+
+.bg-medium {
+  background-color: $bg-medium;
+}
